@@ -25,6 +25,7 @@ It is intended for:
 - JavaScript example client
 - local environment example
 - minimal webhook receiver
+- sandbox smoke-test checklist
 
 ## Excluded
 
@@ -32,9 +33,9 @@ This repository does not expose production credentials, private infrastructure, 
 
 ## Status
 
-Initial public scaffold.
+Public example surface in active hardening.
 
-Examples are aligned with the draft public API contract published in `neurocad-api-docs`.
+Examples are aligned with the draft public API contract published in `neurocad-api-docs` and are intended for sandbox-first integration review.
 
 ## Repository layout
 
@@ -43,3 +44,14 @@ Examples are aligned with the draft public API contract published in `neurocad-a
 - `curl/` shell-first examples
 - `webhooks/` receiver patterns
 - `notebooks/` notebook-oriented quickstarts
+- `docs/` integration and smoke-test notes
+
+## Recommended use
+
+Start with:
+
+1. `neurocad-api-docs/openapi/openapi.yaml`
+2. `curl/submit_job.sh`
+3. `javascript/submit_job.mjs`
+4. `python/submit_job.py`
+5. `docs/sandbox-smoke-test.md`

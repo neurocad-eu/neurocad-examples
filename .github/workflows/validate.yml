@@ -32,3 +32,8 @@ jobs:
 
       - name: Validate shell examples
         run: bash -n curl/submit_job.sh
+
+      - name: Ensure enterprise docs exist
+        run: |
+          test -f .env.example
+          test -f docs/sandbox-smoke-test.md
